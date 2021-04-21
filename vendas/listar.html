@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Sistema de Vendas - Listar Verndas</title>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/funcoes.js"></script>
+        <script src="./js/vendas.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <p><a href="../index.html">Menu</a></p>
+        <b>LISTA DE VENDAS</b><br /><br />
+        <form id="formulario_listagem" action="javascript:listar()">
+            ID vendedor: <input type="text" id="id_vendedor" onkeypress="javascript:return isNumber(event)" autofocus><br />
+            <input type="button" value="Enviar" onclick="javascript:listar()"><br />
+        </form>
+        <div id="lista_vendas"></div>
+    </body>
+</html>
